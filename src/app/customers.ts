@@ -3,4 +3,5 @@ export interface Customers {
   age: number;
   phone: string;
   image: string;
+  star: number;
 }

@@ -17,6 +17,7 @@
           <ng-container *ngIf="showImg">
             <th scope="col">Image</th>
           </ng-container>
+          <th scope="col">Rating</th>
           <th scope="col">Action</th>
         </tr>
         </thead>
@@ -31,6 +32,9 @@
               <img src="{{customer.image}}" alt="anh" width="{{widthImage}}">
             </td>
           </ng-container>
+          <td>
+            <app-star [star]="customer.star"></app-star>
+          </td>
           <td>
             <button class="btn btn-danger btn-delete" (click)="delete(i)">Delete</button>
           </td>

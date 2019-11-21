@@ -13,18 +13,21 @@ export class CustomersComponent implements OnInit {
       age: 20,
       phone: '0358463366',
       image: 'assets/images/anh1.jpg',
+      star: 4,
     },
     {
       name: 'linh',
       age: 20,
       phone: '0358463366',
       image: 'assets/images/anh2.jpg',
+      star: 2.5,
     },
     {
       name: 'phuong',
       age: 20,
       phone: '0358463366',
       image: 'assets/images/anh3.jpg',
+      star: 1.5,
     },
   ];
   widthImage = 100;
