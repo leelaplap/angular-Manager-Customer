@@ -33,6 +33,7 @@ export class CustomersComponent implements OnInit {
   widthImage = 100;
   showImg = true;
   listCustomer: Customers[] = [];
+  messageShow: string;
 
   constructor() {
   }
@@ -57,5 +58,9 @@ export class CustomersComponent implements OnInit {
   search(data) {
     return this.customers.filter(
       customer => customer.name.toLowerCase().indexOf(data) !== -1);
+  }
+
+  showMes(event) {
+    this.messageShow = event;
   }
 }
